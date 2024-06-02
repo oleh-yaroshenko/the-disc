@@ -1,0 +1,589 @@
+@keyframes disc {
+    0% {
+        rotate: 0deg;
+    }
+
+    20% {
+        rotate: 30deg;
+    }
+
+    50% {
+        rotate: 160deg;
+    }
+
+    60% {
+        rotate: 130deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    90% {
+        rotate: 220deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes nav {
+    0% {
+        rotate: 0deg;
+    }
+
+    30% {
+        rotate: 10deg;
+    }
+
+    60% {
+        rotate: -20deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes divider {
+    0% {
+        width: 100%;
+    }
+
+    10% {
+        width: 50%;
+    }
+
+    20% {
+        width: 55%;
+    }
+
+    30% {
+        width: 20%;
+    }
+
+    40% {
+        width: 40%;
+    }
+
+    50% {
+        width: 10%;
+    }
+
+    60% {
+        width: 30%;
+    }
+
+    70% {
+        width: 50%;
+    }
+
+    80% {
+        width: 45%;
+    }
+
+    90% {
+        width: 30%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes image {
+    0% {
+        scale: 100%;
+    }
+
+    10% {
+        scale: 50%;
+    }
+
+    20% {
+        scale: 55%;
+    }
+
+    30% {
+        scale: 20%;
+    }
+
+    40% {
+        scale: 40%;
+    }
+
+    50% {
+        scale: 10%;
+    }
+
+    60% {
+        scale: 30%;
+    }
+
+    70% {
+        scale: 50%;
+    }
+
+    80% {
+        scale: 45%;
+    }
+
+    90% {
+        scale: 30%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+@keyframes account {
+    0% {
+        padding: 1rem;
+    }
+
+    50% {
+        padding: 1rem 3rem;
+    }
+
+    100% {
+        padding: 1rem;
+    }
+}
+
+@keyframes media {
+    0% {
+        rotate: 0deg;
+    }
+
+    20% {
+        rotate: -30deg;
+    }
+
+    40% {
+        rotate: 30deg;
+    }
+
+    60% {
+        rotate: -30deg;
+    }
+
+    80% {
+        rotate: 30deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+body {
+    font-family: "Futura";
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .header {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 1rem;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 35px;
+    display: inline-block;
+    animation: disc 1s infinite;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-left: 1rem;
+}
+
+header nav a {
+    background-color: black;
+    text-decoration: none;
+    color: #fef7b1;
+    padding: .5rem;
+    border-radius: .5em;
+    transition: .5s;
+}
+
+header nav a:hover {
+    box-shadow: 10px 10px #fef7b1;
+    animation: nav .5s;
+}
+
+header .signin {
+    margin-right: 1rem;
+}
+
+header .signin a {
+    text-decoration: none;
+    background-color: #fef7b1;
+    padding: .5rem;
+    border-radius: .5rem;
+    color: black;
+    transition: .5s;
+}
+
+header .signin a:hover {
+    box-shadow: 10px 10px #000000;
+}
+
+
+
+main .enroll {
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fef7b1;
+}
+
+main .enroll .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .enroll img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    animation: image 2s infinite;
+}
+
+main .enroll .title {
+    font-size: xx-large;
+}
+
+main .enroll .wrapper span {
+    text-align: center;
+}
+
+main .enroll .divider {
+    width: 1000px;
+    height: 5px;
+    background-color: #000000;
+    margin: 5px 0px;
+    border-radius: .1rem;
+    animation: divider 2s infinite;
+}
+
+main .enroll a {
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    transition: .5s;
+}
+
+main .enroll a:hover {
+    color: #fef7b1;
+    animation: account .5s;
+}
+
+main .website {
+    background-color: #000000;
+    padding: 8px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+main .website img {
+    filter: invert(100%);
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    animation: disc 1s infinite;
+}
+
+main .website .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .website .wrapper span {
+    text-align: center;
+}
+
+main .website .title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main .reviews {
+    background-color: #ffffff;
+    padding: 8px;
+    padding: calc(8px + 1rem) 8px;
+}
+
+main .reviews img {
+    width: 50px;
+    height: 50px;
+}
+
+main .reviews .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+
+main .reviews .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #fef7b1;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+main .reviews .card:hover {
+    box-shadow: 10px 10px #000000;
+}
+
+main .reviews .card .name img:hover {
+    animation: disc 1s infinite;
+}
+
+main .reviews .name {
+    display: flex;
+    align-items: center;
+}
+
+main .reviews .card .name span {
+    font-size: large;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+main .reviews .title {
+    font-size: xx-large;
+}
+
+footer {
+    background-color: #000000;
+    padding: 8px;
+    color: #fef7b1;
+}
+
+.prices {
+    padding: 8px;
+}
+
+.prices .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices img {
+    width: 20px;
+    height: 20px;
+}
+
+.prices .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #fef7b1;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.prices .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: large;
+}
+
+.prices .header span:first-child {
+    font-weight: bold;
+}
+
+.prices .row {
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+    padding-bottom: 1rem;
+}
+
+.prices .video {
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices .video img {
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
+    animation: disc 1s infinite;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.prices .video img:hover {
+    scale: 130%;
+    animation: disc 1s;
+}
+
+.contact {
+    padding: 8px;
+}
+
+.contact .media {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .media .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0px;
+    column-gap: 1rem;
+}
+
+.contact .media .wrapper img {
+    height: 100px;
+    width: 100px;
+    background-color: #fef7b1;
+    border-radius: 50%;
+}
+
+.contact .media img:hover {
+    animation: media 1s;
+}
+
+.contact .media span {
+    font-size: xx-large;
+}
+
+.contact .info .row {
+    font-size: large;
+    padding: .5rem 0px;
+}
+
+.contact .info .row span {
+    padding-right: 1rem;
+}
+
+.contact .info a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.contact .info a:hover {
+    background-color: #000000;
+    color: #fef7b1;
+}
+
+.signin_view {
+    display: flex;
+    justify-content: center;
+}
+
+.signin_view .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 1rem;
+    background-color: #fef7b1;
+    border-radius: 1rem;
+}
+
+.signin_view form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin_view .title {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signin_view form input {
+    font-family: "Futura";
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 1rem 0px;
+}
+
+.signin_view form a {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+.signin_view form a:hover {
+    color: #fef7b1;
+    background-color: #000000;
+}
+
+.signin_view .signup {
+    padding: 1rem 0px;
+}
+
+.signin_view .signup_link {
+    color: #000000;
+    border-radius: .5rem;
+    padding: .5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+    border: 1px solid #000000;
+}
+
+.signin_view .signup_link:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
