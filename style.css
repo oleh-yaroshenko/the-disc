@@ -307,7 +307,8 @@ main .enroll a {
 }
 
 main .enroll a:hover {
-    color: #fef7b1;
+    color: #000000;
+    background-color: #ffffff;
     animation: account .5s;
 }
 
